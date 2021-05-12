@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Gestion_de_Train</class>
+ <widget class="QMainWindow" name="Gestion_de_Train">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion_de_Train</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>811</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>2000000</width>
+         <height>2000000</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>5</number>
+       </property>
+       <widget class="QWidget" name="principal">
+        <widget class="QTableWidget" name="traintab">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>60</y>
+           <width>681</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>118</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>N° Train</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Design</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Place</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>N° Itinéraire</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>761</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ajouter">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Ajouter</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-plus-480.png</normaloff>:/image/image/icons8-plus-480.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Modifi">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Modifier</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-modifier-480.png</normaloff>:/image/image/icons8-modifier-480.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="suprimer">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Supprimer</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-effacer-480 (1).png</normaloff>:/image/image/icons8-effacer-480 (1).png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="actualisertrain">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-rafraîchir-480.png</normaloff>:/image/image/icons8-rafraîchir-480.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Chercher">
+            <property name="styleSheet">
+             <string notr="true">color: black;
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(255,255,255);
+border-radius: 5px;
+padding: 2% 2%;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rechercher...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-chercher-30.png</normaloff>:/image/image/icons8-chercher-30.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_4">
+        <widget class="QTableWidget" name="recettetab">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>40</y>
+           <width>521</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>163</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>N° Train</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Recette (en Ar)</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Ocupation</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>364</y>
+           <width>171</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Century Gothic</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Total :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="total"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>360</y>
+           <width>40</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Digital-7&quot;;
+color: black;</string>
+         </property>
+         <property name="text">
+          <string>AR</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page">
+        <widget class="QTableWidget" name="placetab">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>50</y>
+           <width>681</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>90</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>N° Train</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>N° Place</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Occupation</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>771</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="actualiserplace">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-rafraîchir-480.png</normaloff>:/image/image/icons8-rafraîchir-480.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Chercher_2">
+            <property name="styleSheet">
+             <string notr="true">color: black;
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(255,255,255);
+border-radius: 5px;
+padding: 2% 2%;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rechercher...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="find">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-chercher-30.png</normaloff>:/image/image/icons8-chercher-30.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <widget class="QWidget" name="layoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>761</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Ajoutpalce_2">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Ajouter</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-plus-480.png</normaloff>:/image/image/icons8-plus-480.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Modifplace_2">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Modifier</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-modifier-480.png</normaloff>:/image/image/icons8-modifier-480.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="suprimerplace_2">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Supprimer</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-effacer-480 (1).png</normaloff>:/image/image/icons8-effacer-480 (1).png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="actualiseritineraire">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-rafraîchir-480.png</normaloff>:/image/image/icons8-rafraîchir-480.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Chercher_3">
+            <property name="styleSheet">
+             <string notr="true">color: black;
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(255,255,255);
+border-radius: 5px;
+padding: 2% 2%;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rechercher...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="find_2">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-chercher-30.png</normaloff>:/image/image/icons8-chercher-30.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTableWidget" name="itinerairetab">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>50</y>
+           <width>681</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>107</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>N° itineraire</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Départ</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arrivée</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Frais</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <widget class="QWidget" name="layoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>761</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Ajoutpalce_3">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Ajouter</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-plus-480.png</normaloff>:/image/image/icons8-plus-480.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Modifplace_3">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Modifier</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-modifier-480.png</normaloff>:/image/image/icons8-modifier-480.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="suprimerplace_3">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(82, 148, 222);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="text">
+             <string>Supprimer</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-effacer-480 (1).png</normaloff>:/image/image/icons8-effacer-480 (1).png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="actualisereservation">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-rafraîchir-480.png</normaloff>:/image/image/icons8-rafraîchir-480.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Chercher_4">
+            <property name="styleSheet">
+             <string notr="true">color: black;
+font: 10pt &quot;Century Gothic&quot;;
+background-color: rgb(255,255,255);
+border-radius: 5px;
+padding: 0 5%;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rechercher...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="find_3">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(82, 148, 222);
+border-radius: 5px;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-chercher-30.png</normaloff>:/image/image/icons8-chercher-30.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTableWidget" name="Reservationtab">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>50</y>
+           <width>681</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>84</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>N° réservation</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>N° train</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Jour</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Mois</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Année</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Nombre place</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Nom</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Prénom</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Destination</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Frais</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+           </font>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="train">
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>10</y>
+           <width>601</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res.qrc">:/image/image/Gare.JPG</pixmap>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>370</y>
+           <width>601</width>
+           <height>42</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="nouveau">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+background-color: rgb(131, 114, 107);
+color: rgb(242, 235, 207);
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string> NOUVEAU</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/nouveau.png</normaloff>:/image/image/nouveau.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>167777</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 16pt &quot;Century Gothic&quot;;
+background-color: rgb(131, 114, 107);
+color: rgb(242, 235, 207);
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string> OUVRIR</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/image/image/icons8-dossier-ouvert-480.png</normaloff>:/image/image/icons8-dossier-ouvert-480.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>811</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(82, 148, 222);
+font: 75 10pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Accueil</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/image/image/home.png</normaloff>:/image/image/home.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Train">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(82, 148, 222);
+font: 75 10pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Train</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/image/image/train.png</normaloff>:/image/image/train.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(82, 148, 222);
+font: 75 10pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Place</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/image/image/place.png</normaloff>:/image/image/place.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(82, 148, 222);
+font: 75 10pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Itinéraire</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/image/image/time.png</normaloff>:/image/image/time.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(82, 148, 222);
+font: 75 10pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Réservation</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/image/image/icons8-fichier-480.png</normaloff>:/image/image/icons8-fichier-480.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(82, 148, 222);
+font: 75 10pt &quot;Century Gothic&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Recette</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/image/image/recette.png</normaloff>:/image/image/recette.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau"/>
+    <addaction name="actionOuvrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionA_propos"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNouveau">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/image/new.png</normaloff>:/image/image/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/image/open.png</normaloff>:/image/image/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/image/quit.png</normaloff>:/image/image/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionA_propos">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/image/a propos.png</normaloff>:/image/image/a propos.png</iconset>
+   </property>
+   <property name="text">
+    <string>A propos</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

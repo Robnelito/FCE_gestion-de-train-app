@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/icons8-dossier-ouvert-480.png</file>
+        <file>image/icons8-fichier-480.png</file>
+        <file>image/icons8-pdf-2-96.png</file>
+        <file>image/nouveau.png</file>
+        <file>image/time.png</file>
+        <file>image/new.png</file>
+        <file>image/open.png</file>
+        <file>image/quit.png</file>
+        <file>image/home.png</file>
+        <file>image/train.png</file>
+        <file>image/place.png</file>
+        <file>image/recette.png</file>
+        <file>image/graphe.png</file>
+        <file>image/a propos.png</file>
+        <file>image/icon_Qt_78x78px.png</file>
+        <file>image/Gare.JPG</file>
+        <file>image/icons8-chercher-30.png</file>
+        <file>image/icons8-effacer-480 (1).png</file>
+        <file>image/icons8-modifier-480.png</file>
+        <file>image/icons8-plus-480.png</file>
+        <file>image/icons8-rafraîchir-480.png</file>
+        <file>image/annuler.png</file>
+        <file>image/valider.png</file>
+        <file>image/logo.png</file>
+        <file>vrai.ico</file>
+    </qresource>
+</RCC>
